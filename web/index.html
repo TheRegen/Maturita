@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skleník</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Skleník</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Stanislav Pixa</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="background-container">
+    <div class="list">
+        <img src="logo (2).png" alt="Pozadí" class="background-image">
+        
+        <div class="image-item">
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2784093/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Teplota&type=line&xaxis=Datum&yaxis=%C2%B0C"></iframe>
+            <p class="nadpis">Poslední teplota:</p>
+            <p class="popis" id="lastTeplota">Načítání...</p>
+        </div>
+
+        <div class="image-item">
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2784093/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Tlak&type=line&xaxis=Tlak&yaxis=Datum"></iframe>
+            <p class="nadpis">Poslední tlak:</p>
+            <p class="popis" id="lastTlak">Načítání...</p>
+        </div>
+
+        <div class="image-item">
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2784093/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Vlhkost&type=line&xaxis=Datum&yaxis=%25+Vlhkosti"></iframe>
+            <p class="nadpis">Poslední vlhkost:</p>
+            <p class="popis" id="lastVlhkost">Načítání...</p>
+        </div>
+        
+        
+    </div>
+    
+    
+    <div class="pocasi">
+    <a class="weatherwidget-io" href="https://forecast7.com/cs/50d4314d26/roudnice-nad-labem/" data-label_1="ROUDNICE NAD LABEM" data-icons="Climacons Animated" data-theme="sky" data-shadow="rgba(0, 0, 0, 0.45)" data-highcolor="#ff7474" data-lowcolor="#8ccbde" >ROUDNICE NAD LABEM</a>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="pocasi.js"></script>
+</body>
+</html>
